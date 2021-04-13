@@ -1,0 +1,17 @@
+current directory: /Users/nuevo/Documents/myapp/vendor/bundle/ruby/3.0.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+/Users/nuevo/.rvm/rubies/ruby-3.0.0/bin/ruby -I /Users/nuevo/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0 -r ./siteconf20210412-20947-seaz42.rb extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /Users/nuevo/Documents/myapp/vendor/bundle/ruby/3.0.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR=" clean
+
+current directory: /Users/nuevo/Documents/myapp/vendor/bundle/ruby/3.0.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR="
+compiling unf.cc
+linking shared-object unf_ext.bundle
+ld: warning: ignoring file /Users/nuevo/.rvm/rubies/ruby-3.0.0/lib/libruby.3.0.dylib, building for macOS-x86_64 but attempting to link with file built for macOS-arm64
+
+current directory: /Users/nuevo/Documents/myapp/vendor/bundle/ruby/3.0.0/gems/unf_ext-0.0.7.7/ext/unf_ext
+make "DESTDIR=" install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 unf_ext.bundle ./.gem.20210412-20947-iu0cxj

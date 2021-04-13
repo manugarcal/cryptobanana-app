@@ -1,0 +1,138 @@
+<div class="container  p-4 text-center">
+<h1>Transacciones más altas en las últimas 24Hrs</h1>
+<p>fuente: <a href="https://www.buda.com" target="_blank">www.buda.com</a></p>
+<div class="container mt-5">
+<table class="table table-striped text-monospace">
+  <thead class="thead-dark">
+    <tr>
+      <th>Mercado</th>
+      <th>Precio </th>
+      <th>Volume</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    
+      <tr>
+        <td>BTC-CLP</td>
+        <td><%= number_to_currency(@priceBTC_CLP, :unit => "CLP ", :separator => ".", :delimiter => ",") %></td>
+        <td>BTC <%=  @maxValueBTC_CLP %></td>
+        <td><%= number_to_currency(@priceBTC_CLP * @maxValueBTC_CLP, :unit => "CLP ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>BTC-COP</td>
+        <td><%= number_to_currency(@priceBTC_COP, :unit => "COP ", :separator => ".", :delimiter => ",") %></td>
+        <td>BTC <%= @maxValueBTC_COP %></td>
+        <td><%= number_to_currency(@maxValueBTC_COP * @priceBTC_COP, :unit => "COP ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>ETH-CLP</td>
+        <td><%= number_to_currency(@priceETH_CLP, :unit => "CLP ", :separator => ".", :delimiter => ",") %></td>
+        <td>ETH <%= @maxValueETH_CLP %></td>
+        <td><%= number_to_currency(@maxValueETH_CLP * @priceETH_CLP , :unit => "CLP ", :separator => ".", :delimiter => ",")%></td>
+      </tr>
+      <tr>
+        <td>ETH-BTC</td>
+        <td><%= number_to_currency(@priceETH_BTC, :unit => "BTC ", :separator => ".", :delimiter => ",") %></td>
+        <td>ETH <%= @maxValueETH_BTC %></td>
+        <td><%= number_to_currency(@maxValueETH_BTC * @priceETH_BTC , :unit => "BTC ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>BTC-PEN</td>
+        <td><%= number_to_currency(@priceBTC_PEN, :unit => "PEN ", :separator => ".", :delimiter => ",") %></td>
+        <td>BTC <%= @maxValueBTC_PEN %></td>
+        <td><%= number_to_currency(@maxValueBTC_PEN * @priceBTC_PEN , :unit => "PEN ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>ETH-PEN</td>
+        <td><%= number_to_currency(@priceETH_PEN, :unit => "PEN ", :separator => ".", :delimiter => ",") %></td>
+        <td>ETH <%= @maxValueETH_PEN %></td>
+        <td><%= number_to_currency(@maxValueETH_PEN * @priceETH_PEN , :unit => "PEN ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>ETH-COP</td>
+        <td><%= number_to_currency(@priceETH_COP, :unit => "COP ", :separator => ".", :delimiter => ",") %></td>
+        <td>ETH <%= @maxValueETH_COP %></td>
+        <td><%= number_to_currency(@maxValueETH_COP * @priceETH_COP , :unit => "COP ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>BCH-BTC</td>
+        <td><%= number_to_currency(@priceBCH_BTC, :unit => "BTC ", :separator => ".", :delimiter => ",") %></td>
+        <td>BCH <%= @maxValueBCH_BTC %></td>
+        <td><%= number_to_currency(@maxValueBCH_BTC * @priceBCH_BTC, :unit => "BTC ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>BCH-CLP</td>
+        <td><%= number_to_currency(@priceBCH_CLP, :unit => "CLP ", :separator => ".", :delimiter => ",") %></td>
+        <td>BCH <%= @maxValueBCH_CLP %></td>
+        <td><%= number_to_currency(@maxValueBCH_CLP * @priceBCH_CLP, :unit => "CLP ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>BCH-COP</td>
+        <td><%= number_to_currency(@priceBCH_COP, :unit => "COP ", :separator => ".", :delimiter => ",") %></td>
+        <td>BCH <%= @maxValueBCH_COP %></td>
+        <td><%= number_to_currency(@maxValueBCH_COP * @priceBCH_COP, :unit => "COP ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>BCH-PEN</td>
+        <td><%= number_to_currency(@priceBCH_PEN, :unit => "PEN ", :separator => ".", :delimiter => ",") %></td>
+        <td>BCH <%= @maxValueBCH_PEN %></td>
+        <td><%= number_to_currency(@maxValueBCH_PEN * @priceBCH_PEN, :unit => "PEN ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>BTC-ARS</td>
+        <td><%= number_to_currency(@priceBTC_ARS, :unit => "ARS ", :separator => ".", :delimiter => ",") %></td>
+        <td>BTC <%= @maxValueBTC_ARS %></td>
+        <td><%= number_to_currency(@maxValueBTC_ARS * @priceBTC_ARS, :unit => "ARS ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>ETH-ARS</td>
+        <td><%= number_to_currency(@priceETH_ARS, :unit => "ARS ", :separator => ".", :delimiter => ",") %></td>
+        <td>ETH <%= @maxValueETH_ARS %></td>
+        <td><%= number_to_currency(@maxValueETH_ARS * @priceETH_ARS, :unit => "ARS ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>BCH-ARS</td>
+        <td><%= number_to_currency(@priceBCH_ARS, :unit => "ARS ", :separator => ".", :delimiter => ",") %></td>
+        <td>BCH <%= @maxValueBCH_ARS %></td>
+        <td><%= number_to_currency(@maxValueBCH_ARS * @priceBCH_ARS, :unit => "ARS ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>LTC-BTC</td>
+        <td><%= number_to_currency(@priceLTC_BTC, :unit => "BTC ", :separator => ".", :delimiter => ",") %></td>
+        <td>LTC <%= @maxValueLTC_BTC %></td>
+        <td><%= number_to_currency(@maxValueLTC_BTC * @priceLTC_BTC, :unit => "BTC ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>LTC-CLP</td>
+        <td><%= number_to_currency(@priceLTC_CLP, :unit => "CLP ", :separator => ".", :delimiter => ",") %></td>
+        <td>LTC <%= @maxValueLTC_CLP %></td>
+        <td><%= number_to_currency(@maxValueLTC_CLP * @priceLTC_CLP, :unit => "CLP ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>LTC-COP</td>
+        <td><%= number_to_currency(@priceLTC_COP, :unit => "COP ", :separator => ".", :delimiter => ",") %></td>
+        <td>LTC <%= @maxValueLTC_COP %></td>
+        <td><%= number_to_currency(@maxValueLTC_COP * @priceLTC_COP, :unit => "COP ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+      <tr>
+        <td>LTC-PEN</td>
+        <td><%= number_to_currency(@priceLTC_PEN, :unit => "PEN ", :separator => ".", :delimiter => ",") %></td>
+        <td>LTC <%= @maxValueLTC_PEN %></td>
+        <td><%= number_to_currency(@maxValueLTC_PEN * @priceLTC_PEN , :unit => "PEN ", :separator => ".", :delimiter => ",")%></td>
+      </tr>
+      <tr>
+        <td>LTC-ARS</td>
+        <td><%= number_to_currency(@priceLTC_ARS, :unit => "ARS ", :separator => ".", :delimiter => ",") %></td>
+        <td>LTC <%= @maxValueLTC_ARS %></td>
+        <td><%= number_to_currency(@maxValueLTC_ARS * @priceLTC_ARS , :unit => "ARS ", :separator => ".", :delimiter => ",") %></td>
+      </tr>
+
+    
+     
+  </tbody>
+</table>
+<p>Dev by Manu </p>
+</div>
+</div>
